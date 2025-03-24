@@ -1,0 +1,124 @@
+/* 전체 페이지 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* 헤더 (경운대학교) */
+header {
+    background-color: #ffffff;
+    color: #007bff;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* 메인 컨테이너 */
+main {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 학기권 정보 */
+.info {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+/* 버튼 컨테이너 */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    flex: 1 1 48%;
+    padding: 15px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid #ddd;
+    font-weight: bold;
+    text-align: center;
+}
+
+.buttons button:hover {
+    background-color: #f0f0f0;
+}
+
+/* 모바일 승차권 QR */
+.qr {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 최근 쪽지 및 공지사항 공통 스타일 */
+.notices, .announcements {
+    text-align: left;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+}
+
+.notices h3, .announcements h3 {
+    background: #f0f0f0;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+    font-size: 18px;
+}
+
+/* 리스트 스타일 */
+.notices ul, .announcements ul {
+    list-style: none;
+    padding: 0;
+}
+
+.notices li, .announcements li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.notices li:last-child, .announcements li:last-child {
+    border-bottom: none;
+}
+
+/* 날짜 스타일 */
+.notices span {
+    font-size: 12px;
+    color: gray;
+    float: right;
+}
+
+/* 공지사항 스타일 */
+.announcements li {
+    font-size: 16px;
+    padding: 15px;
+    background: #f8f9fa;
+    margin-top: 5px;
+    border-radius: 5px;
+}
