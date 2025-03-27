@@ -1,0 +1,245 @@
+/* 전체 페이지 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* 상단 헤더 영역 (아이콘 + 중앙 제목) */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #ffffff;
+    border-bottom: 2px solid #ddd;
+    padding: 15px 0;
+}
+
+/* 햄버거 아이콘 */
+.menu-icon {
+    position: absolute;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+/* 중앙 제목 */
+.center-title {
+    font-size: 24px;
+    color: #007bff;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* 메인 컨테이너 */
+main {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 학기권 정보 */
+.info {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+/* 버튼 컨테이너 */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    flex: 1 1 48%;
+    padding: 15px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid #ddd;
+    font-weight: bold;
+    text-align: center;
+}
+
+.buttons button:hover {
+    background-color: #f0f0f0;
+}
+
+/* 모바일 승차권 QR */
+.qr {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 최근 쪽지 및 공지사항 공통 스타일 */
+.notices, .announcements {
+    text-align: left;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+}
+
+.notices h3, .announcements h3 {
+    background: #f0f0f0;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+    font-size: 18px;
+}
+
+/* 리스트 스타일 */
+.notices ul, .announcements ul {
+    list-style: none;
+    padding: 0;
+}
+
+.notices li, .announcements li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.notices li:last-child, .announcements li:last-child {
+    border-bottom: none;
+}
+
+/* 날짜 스타일 */
+.notices span {
+    font-size: 12px;
+    color: gray;
+    float: right;
+}
+
+.announcements li {
+    font-size: 16px;
+    padding: 15px;
+    background: #f8f9fa;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* 사이드바 */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #4a4a4a;
+    color: white;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+#sidebar h2 {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    background-color: #333;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #666;
+    cursor: pointer;
+}
+
+#sidebar ul li:hover {
+    background-color: #555;
+}
+/* 사이드바 상단 영역 */
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* 닫기 아이콘 */
+.close-icon {
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+}
+/* 모달 팝업 전체 배경 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1500;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* 모달 내용 */
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+
+/* 닫기 버튼(X) */
+.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* 하단 닫기 버튼 */
+.modal-close-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.modal-close-button:hover {
+    background-color: #0056b3;
+}

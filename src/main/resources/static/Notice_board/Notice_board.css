@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.page_tits {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+}
+
+.content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* 테이블 대신 폼 정렬 구조용 */
+label {
+    display: block;
+    margin-bottom: 6px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 15px;
+    color: #333;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* 인라인 그룹: 공지글 + 등록일 */
+.inline-group {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+/* 체크박스와 라벨이 나란히 */
+.inline-group .field {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    justify-content: flex-start;
+}
+
+.inline-group label {
+    margin: 0;
+    text-align: left;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #218838;
+}S
+
+.btns {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btns:hover {
+    background: #0056b3;
+}

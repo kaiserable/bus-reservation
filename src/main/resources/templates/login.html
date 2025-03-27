@@ -1,0 +1,34 @@
+<!-- templates/login.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 - 경운대학교</title>
+    <link rel="stylesheet" href="/login/login.css">
+    <script src="/login/login.js" defer></script>
+</head>
+<body>
+<div class="login-container">
+    <h2 class="title">경운대학교</h2>
+
+    <form class="login-form" onsubmit="return false;">
+        <label for="studentId">학번/교번</label>
+        <input type="text" id="studentId" name="studentId" placeholder="학번 또는 교번" required>
+
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" name="password" placeholder="비밀번호" required>
+
+        <p class="note">초기 비밀번호는 등록한 휴대폰 번호 뒷자리(4자리)입니다.</p>
+
+        <div class="auto-login">
+            <label for="autoLogin">자동 로그인</label>
+            <input type="checkbox" id="autoLogin" name="autoLogin">
+        </div>
+
+        <button type="submit" class="login-btn" onclick="handleLogin()">로그인</button>
+        <button type="button" class="join-btn" onclick="goToJoin()">회원가입</button>
+    </form>
+</div>
+</body>
+</html>

@@ -4,13 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>경운대학교 통학버스</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/main.css">
+    <script src="/script.js" defer></script>
 </head>
 <body>
 
 <header>
-    <h1>경운대학교</h1>
+    <div class="header-container">
+        <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+        <h1 class="center-title" onclick="loadHomePage()" style="cursor: pointer;">경운대학교</h1>
+    </div>
 </header>
+
+<div id="sidebar">
+    <div class="sidebar-header">
+        <h2>경운대학교</h2>
+        <span class="close-icon" onclick="toggleSidebar()">×</span>
+    </div>
+    <ul>
+        <li id="menu-member">회원정보</li>
+        <li id="menu-messagebox">쪽지함</li>
+        <li id="menu-boarding">탑승내역</li>
+        <li id="menu-bus-reservation">버스예약</li>
+        <li id="menu-bus-log">버스예약내역</li>
+        <li id="menu-station">노선 및 정거장</li>
+        <li id="menu-notice">공지사항</li>
+        <li id="menu-logout" onclick="location.href='/login'">로그아웃</li>
+    </ul>
+</div>
+
 
 <main>
     <section class="info">
@@ -23,8 +45,19 @@
     </section>
 
     <section class="qr">
-        <h3>📱 모바일승차권 QR</h3>
+        <h3 onclick="openQRModal()" style="cursor: pointer;">📱 모바일승차권 QR</h3>
     </section>
+
+    <div id="qrModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeQRModal()">×</span>
+            <h2>모바일 승차권(QR)</h2>
+            <img src="/static/qr.png" alt="QR 코드" width="200" />
+            <p>만료 : 2025-03-26 18:07:50<br>만료 이전까지만 사용 가능합니다.</p>
+            <button class="modal-close-button" onclick="closeQRModal()">닫기</button>
+        </div>
+    </div>
+
 
     <section class="notices">
         <h3>최근 쪽지</h3>

@@ -1,0 +1,136 @@
+<div class="reservation-container">
+    <div class="navbar navbar-app">
+        <div class="navbar-brand">
+            <span class="navbar-app">경운대학교</span>
+        </div>
+    </div>
+
+    <div class="notice">
+        * 학기권을 신청 및 신청시 예약제 선택시 차량 예약이 가능합니다.
+    </div>
+
+    <div class="content-wrapper">
+        <!-- 등교/하교 선택 -->
+        <div class="button-group">
+            <button type="button" onclick="selectMode('등교', this)">등교</button>
+            <button type="button" onclick="selectMode('하교', this)">하교</button>
+        </div>
+
+        <!-- 노선 선택 -->
+        <div class="form-group">
+            <label>노선 선택</label>
+            <select class="form-control" id="routeSelect">
+                <option value="">노선 선택</option>
+            </select>
+        </div>
+
+        <!-- 출발 시간 선택 -->
+        <div class="section">
+            <label class="fw-bold">출발시간 선택</label>
+            <ul id="departureList" class="item-list"></ul>
+        </div>
+
+        <!-- 정류장 선택 -->
+        <div id="stationSection" class="section" style="display: none;">
+            <label class="fw-bold">승/하차 정류장 선택</label>
+            <ul id="stationList" class="item-list"></ul>
+        </div>
+
+        <!-- 좌석 선택 -->
+        <div id="seatSection" style="display: none;">
+            <p class="seat-guide">
+                * 차량내 좌석번호가 상이할 경우 안내된<br>
+                좌석배치도 순으로 승차바랍니다.
+            </p>
+
+            <div class="driver-seat">운전석</div>
+
+            <div class="seat-layout">
+                <!-- 좌석 1~44번까지 2-2 배열로 표시 -->
+                <div class="seat-row">
+                    <button class="seat-btn">1번</button>
+                    <button class="seat-btn">2번</button>
+                    <div class="seat-placeholder"></div>
+                    <button class="seat-btn">3번</button>
+                    <button class="seat-btn">4번</button>
+                </div>
+                <div class="seat-row">
+                    <button class="seat-btn">5번</button>
+                    <button class="seat-btn">6번</button>
+                    <div class="seat-placeholder"></div>
+                    <button class="seat-btn">7번</button>
+                    <button class="seat-btn">8번</button>
+                </div>
+                <div class="seat-row">
+                    <button class="seat-btn">9번</button>
+                    <button class="seat-btn">10번</button>
+                    <div class="seat-placeholder"></div>
+                    <button class="seat-btn">11번</button>
+                    <button class="seat-btn">12번</button>
+                </div>
+                <div class="seat-row">
+                    <button class="seat-btn">13번</button>
+                    <button class="seat-btn">14번</button>
+                    <div class="seat-placeholder"></div>
+                    <button class="seat-btn">15번</button>
+                    <button class="seat-btn">16번</button>
+                </div>
+                <div class="seat-row">
+                    <button class="seat-btn">17번</button>
+                    <button class="seat-btn">18번</button>
+                    <div class="seat-placeholder"></div>
+                    <button class="seat-btn">19번</button>
+                    <button class="seat-btn">20번</button>
+                </div>
+                <div class="seat-row">
+                    <button class="seat-btn">21번</button>
+                    <button class="seat-btn">22번</button>
+                    <div class="seat-placeholder"></div>
+                    <button class="seat-btn">23번</button>
+                    <button class="seat-btn">24번</button>
+                </div>
+                <div class="seat-row">
+                    <button class="seat-btn">25번</button>
+                    <button class="seat-btn">26번</button>
+                    <div class="seat-placeholder"></div>
+                    <button class="seat-btn">27번</button>
+                    <button class="seat-btn">28번</button>
+                </div>
+                <div class="seat-row">
+                    <button class="seat-btn">29번</button>
+                    <button class="seat-btn">30번</button>
+                    <div class="seat-placeholder"></div>
+                    <button class="seat-btn">31번</button>
+                    <button class="seat-btn">32번</button>
+                </div>
+                <div class="seat-row">
+                    <button class="seat-btn">33번</button>
+                    <button class="seat-btn">34번</button>
+                    <div class="seat-placeholder"></div>
+                    <button class="seat-btn">35번</button>
+                    <button class="seat-btn">36번</button>
+                </div>
+                <div class="seat-row">
+                    <button class="seat-btn">37번</button>
+                    <button class="seat-btn">38번</button>
+                    <div class="seat-placeholder"></div>
+                    <button class="seat-btn">39번</button>
+                    <button class="seat-btn">40번</button>
+                </div>
+                <div class="seat-row">
+                    <button class="seat-btn">41번</button>
+                    <button class="seat-btn">42번</button>
+                    <div class="seat-placeholder"></div>
+                    <button class="seat-btn">43번</button>
+                    <button class="seat-btn">44번</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 예약 버튼 -->
+        <div class="submit-button-wrapper">
+            <button id="reserveBtn" class="reserve-btn">예약 하기</button>
+        </div>
+    </div>
+</div>

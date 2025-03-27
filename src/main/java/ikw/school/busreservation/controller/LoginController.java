@@ -1,13 +1,14 @@
+// LoginController.java
 package ikw.school.busreservation.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class MainController {
+public class LoginController {
 
-    @GetMapping("/main")
-    public String index() {
-        return "index"; // templates/index.html
+    @GetMapping({"/", "/login"})
+    public String loginPage() {
+        return "login"; // templates/login.html
     }
 }
